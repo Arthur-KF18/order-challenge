@@ -8,6 +8,10 @@
     --fonte-principal: 'Red Hat Display', sans-serif;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     
     height: 100%;
@@ -59,17 +63,20 @@ picture img{
 .sumario p{
     text-align: center;
     font-family: var(--fonte-principal);
-    font-weight: 500;
+    font-weight: 700;
     opacity: 0.6;
     padding-bottom: 1rem;
-    
+    margin: 1rem;
+    color: var(--desaturated-blue);
 }
 
 .plano{
     display: flex;
     flex-direction: row;
-    padding: 1.5rem;
-    justify-content: space-around;
+    padding: 4.5% 6%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
 }
 
 .plano__anual{
@@ -79,8 +86,8 @@ picture img{
 }
 
 .plano__anual img{
-    width: 3rem;
-    padding: 0.4rem;
+    
+    height: 2.7rem;
 }
 
 .plano__anual-preco{
@@ -89,11 +96,18 @@ picture img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 1.5rem;
+    padding: 0.2rem 0.2rem;
+    text-align: center;
+}
+
+.plano__anual-preco p{
+    margin: 0;
+    padding-top: 0.3rem;
 }
 
 .mudar{
     display: flex;
+    padding-bottom: 1.3rem;
     align-items: center;
     font-family: var(--fonte-principal);
     font-weight: 700;
@@ -104,7 +118,7 @@ picture img{
 .ordem{
     display: flex;
     flex-direction: column;
-    padding: 1.2rem;
+    padding: 1rem;
 }
 
 .ordem__pagamento{
@@ -115,9 +129,18 @@ picture img{
     font-family: var(--fonte-principal);
     font-weight: 900;
     font-size: 1rem;
-    margin-bottom: 20px;
-    cursor: pointer;
+    margin-bottom: 20px;    
     border: none;
+    transition: 1s;
+}
+
+.ordem__pagamento:hover{
+    transform: scale(1);
+    background-color: var(--desaturated-blue);
+    color: var(--Bright-blue);
+    opacity: 0.8;
+    transition: 1s;
+    cursor: pointer;
 }
 
 .ordem__cancelar{
@@ -126,7 +149,7 @@ picture img{
     font-family: var(--fonte-principal);
     font-weight: 700;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 
